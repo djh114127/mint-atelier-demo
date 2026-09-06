@@ -1,0 +1,31 @@
+{
+  "name": "xhs-g4",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:fixed": "vite --host 127.0.0.1 --port 52880 --strictPort",
+    "build": "vite build --mode demo",
+    "build:demo": "vite build --mode demo",
+    "build:local": "vite build",
+    "build:pages": "vite build --mode pages --base /xiaohongshu-assistant/",
+    "test": "node --test server/codex/cloudProvider.test.mjs server/config/cloudSecrets.test.mjs server/localCli/resolveCommand.test.mjs src/demoService.test.js",
+    "preview": "vite preview --host 127.0.0.1",
+    "preview:fixed": "vite preview --host 127.0.0.1 --port 52880 --strictPort",
+    "launch:fixed": "node scripts/start-fixed.mjs",
+    "launch:dev": "node scripts/start-fixed.mjs --dev",
+    "deploy:local": "npm run build:local && npm run preview:fixed"
+  },
+  "dependencies": {
+    "@openai/sites-vite-plugin": "^0.2.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "vite": "^8.2.2"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.37.1",
+    "wrangler": "4.92.0"
+  }
+}

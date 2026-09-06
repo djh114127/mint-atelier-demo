@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "mint-atelier-demo",
+  "main": "./server/sitesWorker.mjs",
+  "compatibility_date": "2026-05-22",
+  "assets": {
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  }
+}
