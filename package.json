@@ -9,7 +9,7 @@
     "build": "vite build --mode demo",
     "build:demo": "vite build --mode demo",
     "build:local": "vite build",
-    "build:pages": "vite build --mode pages --base /xiaohongshu-assistant/",
+    "build:pages": "vite build --mode pages --base /mint-atelier-demo/",
     "test": "node --test server/codex/cloudProvider.test.mjs server/config/cloudSecrets.test.mjs server/localCli/resolveCommand.test.mjs src/demoService.test.js",
     "preview": "vite preview --host 127.0.0.1",
     "preview:fixed": "vite preview --host 127.0.0.1 --port 52880 --strictPort",

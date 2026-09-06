@@ -12,7 +12,7 @@
 
 本地运行时可切换到“真实服务”使用下述 CLI 或云端 API。云端面试版本使用 `npm run build:demo` 构建，仅开放演示模式，避免访客误触不可用的本机服务或输入敏感密钥。
 
-备用公开镜像通过 GitHub Pages 自动发布：`https://xunmengwinter.github.io/xiaohongshu-assistant/`。该镜像同样只开放免密钥演示模式。
+备用公开镜像通过 GitHub Pages 自动发布：`https://djh114127.github.io/mint-atelier-demo/`。该镜像同样只开放免密钥演示模式。
 
 ## 预览
 
